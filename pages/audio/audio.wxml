@@ -1,0 +1,13 @@
+<!--调用音频-->
+<view class="btn-area">
+  <button bindtap='startRecordAac' type='primary'>录音开始（aac）</button>
+</view>
+<view class="btn-area">
+  <button bindtap='startRecordMp3' type='primary'>录音开始（mp3）</button>
+</view>
+<view class="btn-area">
+  <button bindtap='stopRecord' type='primary'>录音结束</button>
+</view>
+<view class="btn-area">
+  <button bindtap='playRecord' type='primary'>播放录音</button>
+</view>

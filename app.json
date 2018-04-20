@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/video/video",
+    "pages/audio/audio"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarTitleText": "远鉴科技",
+    "navigationBarTextStyle":"black"
+  }
+}

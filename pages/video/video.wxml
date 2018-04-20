@@ -1,0 +1,40 @@
+<!--调用摄像头-->
+
+<view class="page-body">
+  
+  <view class="page-body-wrapper">
+    <view class="preview-tips">摄像头调试</view>
+    <camera device-position="front" flash="off" binderror="error"></camera>
+
+    <view class="btn-area">
+      <button type="primary" bindtap="takePhoto">拍照</button>
+    </view>
+
+    <view class="btn-area">
+      <button type="primary" bindtap="startRecord">开始录像</button>
+    </view>
+    
+    <view class="btn-area">
+      <button type="primary" bindtap="stopRecordCamera">结束录像</button>
+    </view>
+
+    <view class="preview-tips">预览摄像头效果</view>
+    <image wx:if="{{imgSrc}}" mode="widthFix" src="{{imgSrc}}"></image>
+    <video wx:if="{{videoSrc}}" class="video" src="{{videoSrc}}"></video>
+
+  </view>
+
+  
+  <view class="page-body-wrapper">
+    <view class="preview-tips">音频调试</view>
+    <view class="btn-area">
+      <button bindtap='startRecordAac' type='primary'>录音开始</button>
+    </view>
+    <view class="btn-area">
+      <button bindtap='stopRecord' type='primary'>录音结束</button>
+    </view>
+    <view class="btn-area">
+      <button bindtap='playRecord' type='primary'>播放录音</button>
+    </view>
+  </view>
+</view>
